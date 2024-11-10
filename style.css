@@ -1,0 +1,72 @@
+/* Background Gradient */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #fbc2eb, #a18cd1);
+}
+
+.calculator {
+    width: 220px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Display Screen */
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.8rem;
+    text-align: right;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Calculator Buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #6c63ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Function buttons (Clear and Delete) */
+button.function {
+    background-color: #ff6b6b;
+}
+
+/* Operator buttons */
+button.operator {
+    background-color: #ffaf40;
+}
+
+/* Equals button */
+button.equal {
+    background-color: #2ed573;
+    grid-column: span 2;
+}
+
+/* Button hover effect */
+button:hover {
+    opacity: 0.9;
+}
